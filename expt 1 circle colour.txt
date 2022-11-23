@@ -1,0 +1,47 @@
+package don;
+
+import java.util.Scanner;
+class Circle
+{
+Double r,ar;
+String clr;
+Scanner sc=new Scanner(System.in);
+public Double getRadius()
+{
+System.out.println("Enter the Radius");
+r=sc.nextDouble();
+return r;
+}
+public String getColour()
+{
+System.out.println("Enter the colour");
+clr=sc.next();
+return clr;
+}
+public Double findArea()
+{
+ar=3.14*r*r;
+System.out.println("Area is"+ar);
+return ar;
+}
+}
+public class exp1
+{
+public static void main(String[] args)
+{
+System.out.println("First Circle");
+Circle c1 =new Circle();
+c1.getRadius();
+c1.getColour();
+c1.findArea();
+System.out.println("Second Circle");
+Circle c2 =new Circle();
+c2.getRadius();
+c2.getColour();
+c2.findArea();
+if(c1.ar==c2.ar || c1.clr.equals(c2.clr))
+ System.out.println("Matching Circles");
+else
+ System.out.println("Not matching Circles");
+}
+} 

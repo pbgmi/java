@@ -1,0 +1,20 @@
+package don;
+
+
+public class exp18 {
+	int id;  
+	String name;  
+	public exp18() {
+		System.out.println("Default constructor");
+	} 
+	public exp18(int a,String b){
+		id=a;
+		name=b;
+	}
+	public static void main(String[] args) {
+		exp18 con= new exp18();
+		System.out.println("Student Id : "+con.id + "\nStudent Name : "+con.name);
+		exp18 con2=new exp18(10, "Ram");
+		System.out.println("Student Id : "+con2.id + "\nStudent Name : "+con2.name);  
+	}
+}

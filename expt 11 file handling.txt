@@ -1,0 +1,48 @@
+package don;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class exp11 {
+
+public static void main(String[] args) {
+
+File inputFile= new File("input.txt");
+File outputFile= new File("output.txt");
+
+FileReader ins  = null;
+FileWriter outs = null; 
+
+try {
+
+ins  =  new FileReader (inputFile); 
+outs =  new FileWriter (outputFile); 
+
+ int ch; 
+ while ((ch=ins.read()) != -1) { 
+ outs.write(ch);
+
+}
+
+}
+
+catch (IOException e) { 
+	e.printStackTrace();
+    System.exit(-1);
+                      }
+
+finally
+{ 
+try 
+{
+ins.close();
+outs.close();
+} 
+catch (IOException e)
+{
+
+} 
+}
+}
+}

@@ -1,0 +1,25 @@
+*****interface******
+package don;
+
+public interface exp8 {
+ void getName(String name);
+}
+
+
+*****public class******
+
+package don;
+
+public class exp8_2 implements exp8{
+ public void getName(String name) 
+ {
+  System.out.println("Programming Language: " +name);
+  
+ }
+  public static void main(String[] args) 
+    {
+	  exp8_2 language = new exp8_2();
+      language.getName("Java");
+      language.getName("Python");
+    }
+}

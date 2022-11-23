@@ -1,0 +1,21 @@
+package don;
+
+public class exp9 {
+ public static void main(String[] args) {
+  int b;
+  try {
+   b=50/0; 
+      }
+  
+  catch(Exception e) 
+      {
+   System.out.println("ArithmeticException => " +
+e.getMessage());
+      }
+  
+  finally 
+      {
+       System.out.println("This is the finally block");
+      }
+      }
+      }
